@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Ryan Pratt"
+	],
+	"copyright": "Copyright © 2019, Ryan Pratt",
+	"dependencies": {
+		"vibe-d": "~>0.8.2"
+	},
+	"description": "Personal portfolio site",
+	"license": "proprietary",
+	"name": "portfolio"
+}
