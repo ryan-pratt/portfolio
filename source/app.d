@@ -16,5 +16,5 @@ void main()
 
 void index(HTTPServerRequest req, HTTPServerResponse res)
 {
-	res.writeBody("Hello, World!");
+	res.render!("index.dt", req);
 }

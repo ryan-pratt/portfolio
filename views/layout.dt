@@ -1,0 +1,7 @@
+doctype html
+html
+    head
+        title Ryan Pratt
+    body
+        h1 Hero here
+        block body
