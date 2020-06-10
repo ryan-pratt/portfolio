@@ -2,3 +2,4 @@ extends layout
 
 block body
     h2 Index page here
+    div#test-component

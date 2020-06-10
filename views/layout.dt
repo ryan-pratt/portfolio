@@ -6,3 +6,5 @@ html
         include nav
         h1 Hero here
         block body
+        include scripts
+        include components
