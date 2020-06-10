@@ -2,6 +2,7 @@ doctype html
 html
     head
         title Ryan Pratt
+        include styles
     body
         include nav
         h1 Hero here

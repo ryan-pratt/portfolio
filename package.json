@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run-script build && dub",
-    "build": "npx babel src --out-dir ./public/scripts --presets react-app/prod",
-    "watch": "npx babel --watch src --out-dir ./public/scripts --presets react-app/prod"
+    "build": "npm run-script compile-styles && npm run-script compile-scripts",
+    "compile-styles": "lessc src/styles/styles.less ./public/styles/site.css",
+    "compile-scripts": "npx babel src/scripts --out-dir ./public/scripts --presets react-app/prod",
+    "watch": "npx babel --watch src/scripts --out-dir ./public/scripts --presets react-app/prod"
   },
   "repository": {
     "type": "git",
