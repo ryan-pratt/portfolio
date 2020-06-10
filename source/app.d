@@ -16,5 +16,5 @@ void main()
 
 void index(HTTPServerRequest req, HTTPServerResponse res)
 {
-	res.render!("index.dt", req);
+	res.render!("pages/index.dt", req);
 }

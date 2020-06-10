@@ -3,5 +3,6 @@ html
     head
         title Ryan Pratt
     body
+        include nav
         h1 Hero here
         block body
