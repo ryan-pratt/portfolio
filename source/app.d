@@ -6,8 +6,13 @@ void main()
 	settings.port = 8080;
 	settings.bindAddresses = ["::1", "127.0.0.1"];
 
+	auto staticFileSettings = new HTTPFileServerSettings;
+	staticFileSettings.serverPathPrefix = "/public/";
+
 	auto router = new URLRouter;
-	router.get("/", &index);
+	router
+		.get("/", &index)
+		.get("*", serveStaticFiles("public/", staticFileSettings));
 
 	listenHTTP(settings, router);
 
