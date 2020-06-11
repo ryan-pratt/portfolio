@@ -5,7 +5,10 @@ html
         include styles
     body
         include nav
-        h1 Hero here
-        block body
+        - if(navKey == "index")
+            div#hero
+                h1 Sample text
+        div.content
+            block body
         include scripts
         include components
