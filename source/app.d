@@ -9,9 +9,11 @@ void main()
 	auto staticFileSettings = new HTTPFileServerSettings;
 	staticFileSettings.serverPathPrefix = "/public/";
 
-	auto router = new URLRouter;
-	router
+	auto router = (new URLRouter)
 		.get("/", &index)
+		.get("/blog", &blog)
+		.get("/work", &work)
+		.get("/info", &info)
 		.get("*", serveStaticFiles("public/", staticFileSettings));
 
 	listenHTTP(settings, router);
@@ -23,4 +25,22 @@ void index(HTTPServerRequest req, HTTPServerResponse res)
 {
 	const string navKey = "index";
 	res.render!("pages/index.dt", req, navKey);
+}
+
+void work(HTTPServerRequest req, HTTPServerResponse res)
+{
+	const string navKey = "work";
+	res.render!("pages/work.dt", req, navKey);
+}
+
+void info(HTTPServerRequest req, HTTPServerResponse res)
+{
+	const string navKey = "info";
+	res.render!("pages/info.dt", req, navKey);
+}
+
+void blog(HTTPServerRequest req, HTTPServerResponse res)
+{
+	const string navKey = "blog";
+	res.render!("pages/blog.dt", req, navKey);
 }

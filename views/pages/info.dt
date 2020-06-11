@@ -1,0 +1,5 @@
+extends layout
+
+block body
+    h2.page-header This is the info page
+    p page content
