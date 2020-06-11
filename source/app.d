@@ -21,5 +21,6 @@ void main()
 
 void index(HTTPServerRequest req, HTTPServerResponse res)
 {
-	res.render!("pages/index.dt", req);
+	const string navKey = "index";
+	res.render!("pages/index.dt", req, navKey);
 }

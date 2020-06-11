@@ -1,0 +1,36 @@
+#nav {
+    background: @color-dark-transparent;
+    backdrop-filter: blur(3px) brightness(50%);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+
+    #nav-main {
+        padding: 8px;
+        font-weight: bold;
+    }
+    
+    a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+
+        &.active {
+            color: @color-highlight;
+            border-bottom: 1px solid @color-highlight;
+        }
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        
+        li {
+            padding: 8px;
+        }
+    }
+}

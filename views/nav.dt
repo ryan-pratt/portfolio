@@ -1,5 +1,12 @@
-ul#nav
-    li
-        a Home
-    li
-        a Blog
+div#nav
+    div#nav-main
+        a(href='/') Ryan Pratt
+    ul
+        li
+            a(href='/', class=(navKey == "index" ? "active" : "")) Home
+        li
+            a(href='blog', class=(navKey == "blog" ? "active" : "")) Blog
+        li
+            a(href='work', class=(navKey == "work" ? "active" : "")) Work
+        li
+            a(href='info', class=(navKey == "info" ? "active" : "")) Info
