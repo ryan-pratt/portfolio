@@ -1,0 +1,46 @@
+{
+    "sections": [
+        {
+            "title": "Work Experience",
+            "entries": [
+                {
+                    "title": "Web Developer",
+                    "company": "Smooth Fusion Inc.",
+                    "location": "Lubbock, TX (Remote)",
+                    "dates": "September 2018 - Present",
+                    "description": "Develops cloud-based enterprise web apps and assists with engineering and architectural decisions when needed. Managed development of a mobile app on a nascent framework, as well as led the company’s push to more internal automation with Azure cloud services."
+                },
+                {
+                    "title": "Software Development Intern",
+                    "company": "FAST Inc.",
+                    "location": "Lubbock, TX",
+                    "dates": "September 2016 - October 2017",
+                    "description": "Learned about developing and maintaining ASP.NET web applications. Also developed a new site built on .NET Core, leading the company’s transition to a new stack."
+                },
+                {
+                    "title": "R&D Lab Assistant",
+                    "company": "Muxall LLC",
+                    "location": "Plano, TX",
+                    "dates": "June 2016 - August 2016",
+                    "description": "Assisted with the research and development phase of a new consumer electronics product by writing prototype software and testing hardware."
+                }
+            ]
+        },
+        {
+            "title": "Education",
+            "entries": [
+                {
+                    "title": "Bachelor of Science in Computer Science",
+                    "subtitle": "Minor in Mathematics",
+                    "location": "Texas Tech University (Lubbock, TX)",
+                    "dates": "December 2019"
+                },
+                {
+                    "title": "Study Abroad",
+                    "location": "Norwegian University of Science and Technologh (Trondheim, Norway)",
+                    "dates": "Spring 2018"
+                }
+            ]
+        }
+    ]
+}

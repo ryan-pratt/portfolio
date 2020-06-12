@@ -1,5 +1,6 @@
 import vibe.vibe;
 import pages;
+import api;
 
 void main()
 {
@@ -15,6 +16,7 @@ void main()
 		.get("/blog", &blog)
 		.get("/work", &work)
 		.get("/info", &info)
+		.get("/api/resume", &resume)
 		.get("*", serveStaticFiles("public/", staticFileSettings));
 
 	listenHTTP(settings, router);
