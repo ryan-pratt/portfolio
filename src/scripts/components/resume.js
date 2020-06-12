@@ -1,5 +1,7 @@
 const componentSelector = '#resume';
 
+import ResumeItem from "./resumeItem.js";
+
 class Resume extends React.Component {
   constructor(props) {
     super(props);
@@ -7,7 +9,7 @@ class Resume extends React.Component {
 
   state = {
     loading: true,
-    resumeSections: []
+    sections: []
   };
 
   componentDidMount() {
@@ -16,15 +18,33 @@ class Resume extends React.Component {
 
   _getResumeSections = () => {
     axios.get('/api/resume').then(response => {
-      console.log('response', response.data.sections;
+      this.setState({
+        sections: response.data.sections
+      });
     })
   };
 
-  render() {
-    const content = "test content";
+  _renderSection = (section) => {
     return (
       <div>
-        <p>This is the resume.</p>
+        <p>{section.title}</p>
+        <div>
+          {section.entries.map(entry => {
+            return (
+              <ResumeItem content={entry} />
+            );
+          })}
+        </div>
+        <hr />
+      </div>
+    );
+  }
+
+  render() {
+    const { sections } = this.state;
+    return (
+      <div>
+        {sections.map(this._renderSection)}
       </div>
     );
   }
