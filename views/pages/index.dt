@@ -1,4 +1,4 @@
 extends layout
 
 block body
-    div#test-component
+    p index page content
