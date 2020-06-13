@@ -1,4 +1,6 @@
 extends layout
 
 block body
-    p index page content
+    p I'm a web developer with many hobbies. This site documents and details some of that.
+    p The blog page is the meat of this site, but it's Under Construction&trade; (i.e. I haven't started building it yet at the time of writing).
+    p However, my resumé can be found on the work page. There's also an intro to myself, although admittedly a bit long-winded, on the about page.
