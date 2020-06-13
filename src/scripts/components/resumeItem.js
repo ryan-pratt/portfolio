@@ -6,15 +6,15 @@ export default class ResumeItem extends React.Component {
   render() {
     const { content } = this.props;
     return (
-      <div>
-        <div>{content.dates}</div>
-        <div>
-          <div>
+      <div className='resumeItem'>
+        <div className='datesColumn' dangerouslySetInnerHTML={{__html: content.dates}} />
+        <div className='detailsColumn'>
+          <div className='resumeItemHeader'>
             <h4>{content.title}</h4>
-            <span>{content.company}, {content.location}</span>
+            <div>{content.organization} ({content.location})</div>
           </div>
-          <h5>{content.subtitle}</h5>
-          <p>{content.description}</p>
+          {content.subtitle && (<h5>{content.subtitle}</h5>)}
+          {content.description && (<p>{content.description}</p>)}
         </div>
       </div>
     );

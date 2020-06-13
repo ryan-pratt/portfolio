@@ -27,7 +27,7 @@ class Resume extends React.Component {
   _renderSection = (section) => {
     const sectionKey = Math.random();
     return (
-      <div key={sectionKey}>
+      <div key={sectionKey} className='resumeSection'>
         <h3>{section.title}</h3>
         <div>
           {section.entries.map((entry, index) => {
@@ -36,7 +36,6 @@ class Resume extends React.Component {
             );
           })}
         </div>
-        <hr />
       </div>
     );
   }
@@ -44,7 +43,7 @@ class Resume extends React.Component {
   render() {
     const { sections } = this.state;
     return (
-      <div>
+      <div className='resume'>
         {sections.map(this._renderSection)}
       </div>
     );

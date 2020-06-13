@@ -1,0 +1,42 @@
+.resume {
+    .resumeSection {
+        h3 {
+            text-decoration: underline;
+            text-decoration-color: @color-highlight;
+        }
+        
+        .resumeItem {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin: 12px 0;
+            // padding-left: 8px;
+            
+            div {
+
+                &.datesColumn {
+                    grid-column: span 1;
+                    border-right: 1px solid @color-highlight;
+                }
+
+                &.detailsColumn {
+                    grid-column: span 4;
+                    padding-left: 12px;
+                }
+            }
+
+            .resumeItemHeader {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 0;
+
+                h4 {
+                    margin: 0;
+                }
+            }
+
+            h5 {
+                margin: 0;
+            }
+        }
+    }
+}
