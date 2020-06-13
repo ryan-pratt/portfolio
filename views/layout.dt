@@ -7,7 +7,7 @@ html
         include nav
         - if(navKey == "index")
             div#hero
-                h1 Sample text
+                h1 That ubiquitous site every developer has
         div.content
             block body
         include scripts
