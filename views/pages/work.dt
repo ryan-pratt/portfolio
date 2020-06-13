@@ -1,5 +1,30 @@
 extends layout
 
 block body
-    h2.page-header This is the work page
-    div#resume
+    div#work-page
+        h2.page-header TODO: header
+        p I am a fast-learning full stack developer with experience in many technologies, work environments, and development pipelines.
+        h3 Strengths
+        ul
+            li Full stack web development with .NET Core and Vue.js, including relational database design with Microsoft SQL Server and Entity Framework Core
+            li Good problem solver and fast learner, able to develop prodction code sooner than previous employers' expectations and spearhead progression to new technologies
+            li Comfortable simultaneously working on projects across different technology stacks with rapid deployment schedules
+            li Loves learning the deeper, esoteric features of the tools I'm using. I have become the go-to guy among my coworkers for questions about obscurities in C# and EF Core
+        div#resume
+        h3 Skills
+        ul
+            li
+                strong Techniques:
+                | &nbsp;Microservice applications, continuous integration and deployment
+            li
+                strong Frameworks:
+                | &nbsp;.NET (Core and 4.x), Vue, Angular, React, Vue Native, React Native
+                ul
+                    li
+                        i Exploring: WebAssembly
+            li
+                strong Languages:
+                | &nbsp;C#, JavaScript, Python, Java
+                ul
+                    li
+                        i Exploring: C++, D
