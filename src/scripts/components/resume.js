@@ -25,13 +25,14 @@ class Resume extends React.Component {
   };
 
   _renderSection = (section) => {
+    const sectionKey = Math.random();
     return (
-      <div>
-        <p>{section.title}</p>
+      <div key={sectionKey}>
+        <h3>{section.title}</h3>
         <div>
-          {section.entries.map(entry => {
+          {section.entries.map((entry, index) => {
             return (
-              <ResumeItem content={entry} />
+              <ResumeItem key={`${sectionKey}-${index}`} content={entry} />
             );
           })}
         </div>

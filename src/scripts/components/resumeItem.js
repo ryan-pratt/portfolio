@@ -6,7 +6,17 @@ export default class ResumeItem extends React.Component {
   render() {
     const { content } = this.props;
     return (
-      <p>{content.title}</p>
+      <div>
+        <div>{content.dates}</div>
+        <div>
+          <div>
+            <h4>{content.title}</h4>
+            <span>{content.company}, {content.location}</span>
+          </div>
+          <h5>{content.subtitle}</h5>
+          <p>{content.description}</p>
+        </div>
+      </div>
     );
   }
 }
