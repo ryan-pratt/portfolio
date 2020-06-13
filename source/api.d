@@ -5,7 +5,6 @@ import std.file;
 import std.json;
 import std.stdio;
 import vibe.vibe;
-import models.resume;
 
 void resume(HTTPServerRequest req, HTTPServerResponse res)
 {
