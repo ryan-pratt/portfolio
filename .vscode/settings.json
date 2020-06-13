@@ -6,5 +6,8 @@
         "npm: compile-scripts": [
 			"src/scripts/*/*.js"
         ]
-    }
+    },
+    "dscanner.ignoredKeys": [
+        "dscanner.style.undocumented_declaration"
+    ]
 }
