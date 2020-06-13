@@ -9,4 +9,4 @@ div#nav
         li
             a(href='work', class=(navKey == "work" ? "active" : "")) Work
         li
-            a(href='info', class=(navKey == "info" ? "active" : "")) Info
+            a(href='about', class=(navKey == "about" ? "active" : "")) About

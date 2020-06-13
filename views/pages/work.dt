@@ -2,7 +2,7 @@ extends layout
 
 block body
     div#work-page
-        h2.page-header TODO: header
+        h2.page-header About my work
         p I am a fast-learning full stack developer with experience in many technologies, work environments, and development pipelines.
         h3 Strengths
         ul

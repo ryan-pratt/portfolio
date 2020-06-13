@@ -1,0 +1,13 @@
+extends layout
+
+block body
+    h2.page-header About me
+    p I currently reside in the Denver metro area working remotely for a web dev firm in Lubbock, Texas. I have many hobbies and passions, but the biggest of these are probably music and weather. I'd love to work as a developer in one of these industries someday.
+    h3 Education
+    p I qualified for in-state tuition in both Texas and California, but instead I opted to pay $40k/yr out-of-state tuition at my dream school, UW in Seattle. This was a mistake.
+    p After a few quarters, I realized that what I was paying was ridiculous, so I transferred to TTU. I finished my degree there in order to not graduate with crippling, life-ruining student debt. I also worked near full-time throughout most of this, and with some financial support from my parents, I was able to graduate with no debt! 🎉
+    p I'd also like to shout out my internships here in this education section because I learned more at these than in any of my college courses. Plus, with my last internship, I liked them as an employer, and more importantly they liked me as an employee, so this eventually transitioned into a full-time position in which they were even willing to let me move away from Lubbock.
+    h3 Study abroad
+    p This was by far the coolest part of my education, and it definitely helped me grow more as a global-thinking person far more than any domestic classroom course about culture could have. NTNU (Trondheim, Norway) was actually my second choice behind UiT (Tromsø), but logistics made it easier.
+    p NTNU ended up working out really well, though. I already had an internet friend there, which made settling in and making friends really easy. Plus, I did get to spend a week up in northern Norway, so I ended up getting to tour UiT.
+    p If I had to boil this experience down to a single unit, the biggest thing I took away from it is that different cultures have a fundamentally different way of thinking, not just that they sometimes do things differently.

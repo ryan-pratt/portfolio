@@ -15,7 +15,7 @@ void main()
 		.get("/", &index)
 		.get("/blog", &blog)
 		.get("/work", &work)
-		.get("/info", &info)
+		.get("/about", &about)
 		.get("/api/resume", &resume)
 		.get("*", serveStaticFiles("public/", staticFileSettings));
 
