@@ -1,0 +1,10 @@
+{
+    "triggerTaskOnSave.tasks": {
+        "npm: compile-styles": [
+            "src/styles/**.less"
+        ],
+        "npm: compile-scripts": [
+			"src/scripts/*/*.js"
+        ]
+    }
+}

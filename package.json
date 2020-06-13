@@ -4,11 +4,9 @@
   "description": "Simple portfolio/blog site for myself to mess around with vibe.d",
   "main": "index.js",
   "scripts": {
-    "start": "npm run-script build && dub",
-    "build": "npm run-script compile-styles && npm run-script compile-scripts",
+    "start": "dub",
     "compile-styles": "lessc src/styles/styles.less ./public/styles/site.css",
-    "compile-scripts": "npx babel src/scripts --out-dir ./public/scripts --presets react-app/prod",
-    "watch": "npx babel --watch src/scripts --out-dir ./public/scripts --presets react-app/prod"
+    "compile-scripts": "npx babel src/scripts --out-dir ./public/scripts --presets react-app/prod"
   },
   "repository": {
     "type": "git",

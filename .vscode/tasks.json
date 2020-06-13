@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dub",
+			"run": true,
+			"compiler": "dmd",
+			"archType": "x86_64",
+			"buildType": "debug",
+			"configuration": "application",
+			"_generated": true,
+			"problemMatcher": [
+				"$dmd"
+			],
+			"group": "build",
+			"label": "dub-auto: Run portfolio",
+			"detail": "dub run --compiler=dmd -a=x86_64 -b=debug -c=application"
+		},
+		{
+			"type": "npm",
+			"script": "compile-styles",
+			"group": "none",
+			"problemMatcher": [],
+			"label": "npm: compile-styles",
+			"detail": "lessc src/styles/styles.less ./public/styles/site.css"
+		},
+		{
+			"type": "npm",
+			"script": "compile-scripts",
+			"group": "none",
+			"problemMatcher": [],
+			"label": "npm: compile-scripts",
+			"detail": "npx babel src/scripts --out-dir ./public/scripts --presets react-app/prod"
+		}
+	]
+}
