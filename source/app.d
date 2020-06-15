@@ -17,6 +17,7 @@ void main()
 		.get("/work", &work)
 		.get("/about", &about)
 		.get("/api/resume", &resume)
+		.get("/api/blogs", &blogs)
 		.get("*", serveStaticFiles("public/", staticFileSettings));
 
 	listenHTTP(settings, router);
