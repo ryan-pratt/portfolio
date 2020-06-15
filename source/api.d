@@ -13,11 +13,7 @@ import utilities;
 
 void resume(HTTPServerRequest req, HTTPServerResponse res)
 {
-    auto file = File("data\\resume.json", "r");
-    string json = "";
-    while (!file.eof()) {
-        json ~= strip(file.readln());
-    }
+    string json = readWholeFile("data\\resume.json");
     JSONValue obj = parseJSON(json); // this makes sure the json is valid before it gets returned
 	res.writeJsonBody(obj);
 }
@@ -34,12 +30,7 @@ void blogs(HTTPServerRequest req, HTTPServerResponse res)
     string response = "";
     foreach (string entry; toShow)
     {
-        auto file = File(entry, "r");
-        string json = "";
-        while (!file.eof()) {
-            json ~= strip(file.readln());
-        }
-
+        string json = readWholeFile(entry);
         auto obj = parseJSON(json);
 
         // only get the first paragraph
