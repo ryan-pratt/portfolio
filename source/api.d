@@ -27,7 +27,7 @@ void blogs(HTTPServerRequest req, HTTPServerResponse res)
     // only get the 10 most recent posts
     auto toShow = entries.schwartzSort!(hashBlogFileName, "a > b")[0..min(entries.length, 10)];
 
-    string response = "";
+    JSONValue[] response = [];
     foreach (string entry; toShow)
     {
         string json = readWholeFile(entry);
@@ -37,9 +37,8 @@ void blogs(HTTPServerRequest req, HTTPServerResponse res)
         string firstParagraph = obj["paragraphs"].array[0].str;
         obj["paragraphs"].array = [JSONValue(firstParagraph)];
 
-        response ~= toJSON(obj);
-        response ~= ",";
+        response ~= obj;
     }
 
-    res.writeJsonBody("[" ~ chop(response) ~ "]");
+    res.writeJsonBody(response);
 }
