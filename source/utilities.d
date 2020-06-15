@@ -1,7 +1,6 @@
 module utilities;
 
 import std.conv : to;
-import std.file;
 import std.stdio;
 import std.string;
 

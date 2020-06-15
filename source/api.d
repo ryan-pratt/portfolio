@@ -2,12 +2,10 @@ module api;
 
 import std.algorithm;
 import std.array;
-import std.conv : to;
 import std.file;
 import std.json;
 import std.math;
 import std.path;
-import std.stdio;
 import vibe.vibe;
 import utilities;
 
@@ -18,7 +16,7 @@ void resume(HTTPServerRequest req, HTTPServerResponse res)
 	res.writeJsonBody(obj);
 }
 
-void blogs(HTTPServerRequest req, HTTPServerResponse res)
+void blogPosts(HTTPServerRequest req, HTTPServerResponse res)
 {
     auto entries = dirEntries("data\\blogs", SpanMode.shallow)
         .map!(e => e.name)
@@ -42,3 +40,8 @@ void blogs(HTTPServerRequest req, HTTPServerResponse res)
 
     res.writeJsonBody(response);
 }
+
+// void blogPost(HTTPServerRequest req, HTTPServerResponse res)
+// {
+//     auto id = req.params["id"];
+// }

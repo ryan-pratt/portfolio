@@ -13,11 +13,13 @@ void main()
 
 	auto router = (new URLRouter)
 		.get("/", &index)
-		.get("/blog", &blog)
+		.get("/blog", &blogs)
+		// .get("/blog/:id", &blog)
 		.get("/work", &work)
 		.get("/about", &about)
 		.get("/api/resume", &resume)
-		.get("/api/blogs", &blogs)
+		.get("/api/blogs", &blogPosts)
+		// .get("/api/blog/:id", &blogPost)
 		.get("*", serveStaticFiles("public/", staticFileSettings));
 
 	listenHTTP(settings, router);

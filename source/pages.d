@@ -8,11 +8,18 @@ void index(HTTPServerRequest req, HTTPServerResponse res)
 	res.render!("pages/index.dt", req, navKey);
 }
 
-void blog(HTTPServerRequest req, HTTPServerResponse res)
+void blogs(HTTPServerRequest req, HTTPServerResponse res)
 {
 	const string navKey = "blog";
-	res.render!("pages/blog.dt", req, navKey);
+	res.render!("pages/blogs.dt", req, navKey);
 }
+
+// void blog(HTTPServerRequest req, HTTPServerResponse res)
+// {
+// 	const string navKey = "blog";
+// 	auto id = req.params["id"];
+// 	res.render!("pages/blog.dt", req, navKey);
+// }
 
 void work(HTTPServerRequest req, HTTPServerResponse res)
 {
