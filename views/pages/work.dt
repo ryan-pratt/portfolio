@@ -21,10 +21,10 @@ block body
                 | &nbsp;.NET (Core and 4.x), Vue, Angular, React, Vue Native, React Native
                 ul
                     li
-                        i Exploring: WebAssembly
+                        small Exploring: WebAssembly
             li
                 strong Languages:
                 | &nbsp;C#, JavaScript, Python, Java
                 ul
                     li
-                        i Exploring: C++, D
+                        small Exploring: C++, D
