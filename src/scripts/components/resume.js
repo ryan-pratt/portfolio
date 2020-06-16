@@ -50,4 +50,5 @@ class Resume extends React.Component {
   }
 }
 
-ReactDOM.render(React.createElement(Resume), document.querySelector(componentSelector));
+const element = document.querySelector(componentSelector);
+if (element) ReactDOM.render(React.createElement(Resume), element);
