@@ -2,4 +2,4 @@ extends layout
 
 block body
     h2.page-header This is the blog page
-    p page content
+    div#blogs

@@ -1,1 +1,3 @@
 script(src='/public/scripts/components/resume.js', type="module")
+script(src='/public/scripts/components/blogs.js', type="module")
+script(src='/public/scripts/components/blogPost.js', type="module")
