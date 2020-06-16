@@ -1,0 +1,36 @@
+.blogs {
+    .blogPost {
+        border: 1px solid @color-mid;
+        border-radius: 8px;
+        margin: 8px 0;
+        padding: 24px 24px 16px;
+
+        h3 {
+            text-decoration: none;
+            margin: 0 0 2px;
+        }
+
+        .blogPostFoot {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .date {
+                font-size: small;
+                color: @color-mid;
+                font-style: italic;
+            }
+            
+            .tags {
+                color: @color-light;
+                font-style: italic;
+                text-align: right;
+                
+                i {
+                    color: @color-mid;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
